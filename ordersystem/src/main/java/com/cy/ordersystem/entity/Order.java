@@ -32,6 +32,8 @@ public class Order {
     private Long completionDate; // 完工日期
     @Column
     private Long shipmentDate; // 发货日期
+    @Column
+    private String orderStatus; // 订单状态
     @Transient
     private List<Step> stepList; // 节点列表
 }
